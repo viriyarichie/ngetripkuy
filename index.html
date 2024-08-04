@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ngetripkuy</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icon  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Add the evo-calendar.css for styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">ngetrip<span>kuy</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Jadwal</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="clipboard"><i data-feather="clipboard"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Navbar end -->
+
+    <!-- Hero Section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Ayo <span>Ngetrip!</span></h1>
+        <p>Blalabla lrem ipusa dakfsjsd snadfjasdhf asdfjsaldkfj klasjdf</p>
+        <a href="#" class="cta">Hubungi Sekarang</a>
+      </main>
+    </section>
+
+    <!-- Hero Section end-->
+
+    <!-- about section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img\tentang-kami.jpg" alt="Tentang Kami" />
+        </div>
+
+        <div class="content">
+          <h3>Kenapa memilih kami?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+            porro earum natus tempora asperiores nobis!
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
+            error laudantium tempora officiis? Dolore perferendis molestias
+            mollitia, similique optio asperiores.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section end -->
+
+    <!-- Menu section start -->
+    <link rel="stylesheet" href="css/evo-calendar.min.css" />
+    <link rel="stylesheet" href="css/evo-calendar.midnight-blue.min.css" />
+
+    <section id="menu" class="menu">
+      <h2><span>Jadwal</span> trip</h2>
+      <div id="calendar"></div>
+    </section>
+
+    <!-- Menu section end-->
+
+    <!-- Contact section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        enimeius deleniti eligendi quam placeat qui perspiciatis ut dignissimos
+        aut.
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d248.95112908822205!2d117.58721843679373!3d3.296107091775172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sid!2sid!4v1722366396025!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form>
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="nohp" />
+          </div>
+
+          <button type="submit" class="btn">Kirim pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Jadwal</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">richieviriya</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Calendar -->
+    <!-- Add jQuery library (required) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!-- Add the evo-calendar.js for.. obviously, functionality! -->
+    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#calendar").evoCalendar({
+          theme: "Midnight Blue",
+          calendarEvents: [
+            // Juni
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["June/7/2024", "June/9/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["June/14/2024", "June/16/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["June/21/2024", "June/23/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["June/28/2024", "June/30/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            // Juli
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["July/5/2024", "July/7/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["July/12/2024", "July/14/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["July/19/2024", "July/21/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["July/26/2024", "July/28/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            // Agustus
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["Auguust/2/2024", "August/4/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["August/9/2024", "August/11/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["August/16/2024", "August/18/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["August/23/2024", "August/25/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            // September
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["September/6/2024", "September/8/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["September/13/2024", "September/15/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["September/20/2024", "September/22/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["September/27/2024", "September/29/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            // Oktober
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["October/4/2024", "October/6/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["October/11/2024", "October/13/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["October/18/2024", "October/20/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["October/25/2024", "October/27/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            // November
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["November/1/2024", "November/3/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["November/8/2024", "November/10/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["November/15/2024", "November/17/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["November/22/2024", "November/24/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["November/29/2024", "November/1/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            // Desember
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["December/6/2024", "December/8/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["December/13/2024", "December/15/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["December/20/2024", "December/22/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["December/24/2024", "December/26/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["December/27/2024", "December/29/2024"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              id: "admin", // Event's ID (required)
+              name: "Trip 3D2N", // Event name (required)
+              date: ["December/31/2024", "January/2/2025"], // Event date (required)
+              type: "Trip", // Event type (required)
+              everyYear: false, // Same event every year (optional)
+              color: "#5627ff",
+            },
+            {
+              name: "Vacation Leave",
+              badge: "02/13 - 02/15", // Event badge (optional)
+              date: ["February/13/2020", "February/15/2020"], // Date range
+              description: "Vacation leave for 3 days.", // Event description (optional)
+              type: "event",
+              color: "#63d867", // Event custom color (optional)
+            },
+          ],
+        });
+      });
+    </script>
+    <!-- java script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
