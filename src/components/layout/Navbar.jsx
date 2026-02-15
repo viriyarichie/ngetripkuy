@@ -43,7 +43,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold font-sans tracking-tighter">
           <img
-            src={logo} //load logo
+            src={logo} //load logo nihhh
             alt="Logo"
             className="h-10 w-auto object-contain scale-[3.4] origin-left"
           />
